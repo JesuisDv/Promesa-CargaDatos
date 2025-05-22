@@ -9,13 +9,11 @@
 <body class="flex flex-col justify-center items-center h-screen">
     <div  class="contenedor flex flex-col items-center gap-10">
         <h1 class="font-bold text-2xl">Carga de Datos</h1>
-        <div id="status" class="border-t-blue-500 border-5 status text-md border-gray-500 border w-11 h-11 rounded-full hidden animate-spin">
-            <p id="estado"></p>
-        </div>
-        
+        <div id="status" class="border-t-blue-500 border-5 status text-md border-gray-500 border w-11 h-11 rounded-full hidden animate-spin"></div>
+        <p id="estado"></p>
         <div class="botones flex gap-10">
-            <button class="cargar bg-blue-500  hover:bg-blue-600 w-30 h-12 rounded text-white ">Cargar Datos</button>
-            <button id="cancelarCarga" class="bg-blue-500 hover:bg-blue-600 w-30 h-12 rounded text-white"> Cancelar</button>
+            <button id="cargar" class="bg-blue-500  hover:bg-blue-600 w-30 h-12 rounded text-white ">Cargar Datos</button>
+            <button id="cancelarCarga" disabled class="bg-blue-500 hover:bg-blue-600 w-30 h-12 rounded text-white"> Cancelar</button>
         </div>
         <div class="resultado shadow-xl/30 w-100 h-20 rounded-xl border-black border-1">
             <p id="resultado" class="text-center text-2xl font-bold"></p>
